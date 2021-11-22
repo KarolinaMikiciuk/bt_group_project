@@ -8,7 +8,7 @@ all_reviews_dates = []
 all_reviews_ratings = []
 
 
-for page_num in range(2): #there are 80 pages of reviews, start at page 1, not page 0, so put (1,81)
+for page_num in range(81): #there are 80 pages of reviews, start at page 1, not page 0, so put (1,81)
     url = f"https://www.broadband.co.uk/broadband/providers/bt/reviews//page:{page_num}/#reviews"
     result_fetched = rq.get(url)
     content_soup = BeautifulSoup(result_fetched.content, 'html.parser') #using lxml parser features='lxml'
@@ -40,7 +40,7 @@ for page_num in range(2): #there are 80 pages of reviews, start at page 1, not p
     for review_rating in reviews_ratings:  
         rating = review_rating.get_text() # ratingValue
         #all_reviews_ratings.append(rating)
-        print(review_rating)
+        #print(review_rating)
 
 review_df = pd.DataFrame({
 'content' :all_reviews_contents,
