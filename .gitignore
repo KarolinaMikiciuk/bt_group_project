@@ -1,4 +1,9 @@
-explor
+explor/
 .ipynb_checkpoints
-fails
-corpora
+fails/
+corpora/
+explore.py
+.env
+check.csv
+scraped_csv_one.csv
+__pycache__/
