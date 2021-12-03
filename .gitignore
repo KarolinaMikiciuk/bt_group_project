@@ -7,3 +7,13 @@ explore.py
 check.csv
 scraped_csv_one.csv
 __pycache__/
+fails
+corpora
+.vscode
+.DS_Store
+.pytest_cache
+.coverage
+.ipynb
+venv/
+.idea/
+
