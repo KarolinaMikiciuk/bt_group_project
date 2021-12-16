@@ -62,7 +62,7 @@ def iterative_read_csv(path, chunksize=500):
 
 
 if __name__ == '__main__':
-    text = iterative_read_csv('scraped_csv_one.csv')
+    text = iterative_read_csv('data/data_file_1.csv')
     # dataframe = readcsv('scraped_csv_one.csv', start=100, stop=500)
     # text = df_retrieve_content(dataframe)
     wordfrequency(text)
