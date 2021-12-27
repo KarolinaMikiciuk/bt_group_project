@@ -38,7 +38,7 @@ def wordfrequency(text):
     # Display the generated image:
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
-    plt.savefig("bt_wordcloud.png", dpi=1200)
+    plt.savefig("bt_wordcloud.png", dpi=400)
 
 
 def iterative_read_csv(path, chunksize=500):
