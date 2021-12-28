@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 
 def readcsv(filepath, start=None, stop=None):
     """reads in a csv file, and outputs a pandas dataframe"""
-    print(start, stop)
     if start is not None and stop is not None:
         skiprows = start
         nrows = stop - skiprows
@@ -29,20 +28,17 @@ def df_retrieve_content(df):
     content = df.content
     text = ''
     for entry in content:
-        # TODO: Fix properly
         text += str(entry)
     return text
 
 
 def wordfrequency(text):
     tokens = tokenize.word_tokenize(text)
-    print(tokens)
     wordcloud = WordCloud().generate(text)
-
     # Display the generated image:
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
-    plt.show()
+    plt.savefig("bt_wordcloud.png", dpi=400)
 
 
 def iterative_read_csv(path, chunksize=500):
@@ -62,8 +58,8 @@ def iterative_read_csv(path, chunksize=500):
 
 
 if __name__ == '__main__':
-    text = iterative_read_csv('data/data_file_1.csv')
-    # dataframe = readcsv('scraped_csv_one.csv', start=100, stop=500)
-    # text = df_retrieve_content(dataframe)
+    text = ''
+    for i in range(1, 81):
+        file = '../data/data_file_{}.csv'.format(i)
+        text += iterative_read_csv(file)
     wordfrequency(text)
-
