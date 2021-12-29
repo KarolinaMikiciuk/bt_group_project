@@ -116,7 +116,10 @@
 
 Separating analysis and the different stages of the data project lifecycle is necessary in the case of our project, as having everything in one notebook would freeze your computer when trying to run it. 
 
+The nlp_pipeline.ipynb contains functions necessary to clean the review data. It used to contain the topic modelling code and keyword extraction code (using Gensim and nltk-rake), but this code did not make it into the final project due to ridiculously intensive CPU usage. 
+
 ## Steps for running the code
+### Our project is divided into two main parts: statistical analysis and NLP (sentiment) analysis. The code for the two sections should be run completely separately to avoid burning your CPU. 
 
 1. Clone the repository.
 2. Run  $pip install -r requirements.txt
@@ -126,7 +129,7 @@ Separating analysis and the different stages of the data project lifecycle is ne
    * EDA_Null_Values_1.ipynb
    * review_count_plot.ipynb
    * StarRating_Analysis.ipynb
-   *  location_functions.ipynb
+   * location_functions.ipynb
    it is not recommended to run them all at once due to the CPU usage
 5. For the sentiment analysis run:
    * nltk_sentiment_analysis.ipynb
