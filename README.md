@@ -1,6 +1,6 @@
  # CFG Course Final Project
  
- Team: Radhika Kumar, ELizabeth Arevalo, Isobel Blythe, Karolina Mikiciuk, Sunaina Parvathi
+ Team: Radhika Kumar, Elizabeth Arevalo, Isobel Blythe, Karolina Mikiciuk, Sunaina Parvathi
  
  ## Project Folder Structure 
  
