@@ -115,3 +115,19 @@
 *  The team_project.ipynb contains visualisations, without code, as well as our conclusions and insights from the collected data; the target audience for this notebook are project stakeholders. Finally, wordfrequencycloud.py contains the code for producing a word cloud.
 
 Separating analysis and the different stages of the data project lifecycle is necessary in the case of our project, as having everything in one notebook would freeze your computer when trying to run it. 
+
+## Steps for running the code
+
+1. Clone the repository.
+2. Run  $pip install -r requirements.txt
+3. You may run the src/broadband-dot-com-scraper.py manually or use the data files that have already been scraped and saved in the data/ folder.
+4. For statistical analysis run:
+   * wordfrequencycloud.py
+   * EDA_Null_Values_1.ipynb
+   * review_count_plot.ipynb
+   * StarRating_Analysis.ipynb
+   *  location_functions.ipynb
+   it is not recommended to run them all at once due to the CPU usage
+5. For the sentiment analysis run:
+   * nltk_sentiment_analysis.ipynb
+6. For our conclusions see the team_project.ipynb
