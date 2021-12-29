@@ -4,6 +4,7 @@
  
  ## Project Folder Structure 
  
+ ```
  .
 ├── analysis
 │   ├── EDA_Null_Values_1.ipynb
@@ -104,6 +105,7 @@
 │   └── wordfrequencycloud.py
 ├── team_project.ipynb
 └── uk_locations.csv
+```
 
 * The analysis folder contains the statistical analysis code. 
 * The data folder contains all of the data that we have scraped for our project.
