@@ -118,6 +118,7 @@
 *  Files gb.csv and uk_locations.csv are files containing data necessary for the cleansing stage of the locations data. 
 *  The file nltk_sentiment_analysis.ipynb, as well as src/nlp_pipeline.ipynb contain the sentiment analysis code, the former being a file containing the analysis, while the latter contains functions used for cleaning the review data. 
 *  Files utils.py and broadband-dot-com-scraper.py contain the code used for scraping the data from the website. 
+*  The report.pdf contains our project report.
 *  The team_project.ipynb contains visualisations, without code, as well as our conclusions and insights from the collected data; the target audience for this notebook are project stakeholders. Finally, wordfrequencycloud.py contains the code for producing a word cloud.
 
 Separating analysis and the different stages of the data project lifecycle is necessary in the case of our project, as having everything in one notebook would freeze your computer when trying to run it. 
